@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% for link, title,image, article in params[:6] %}
+<div class="headlines">
+<div <img src="{{image}}" height="100" width="100">
+<div class="links"><a href="{{link}}">{{title}}</a></div>
+<div class="articles">{{article}}</div>
+</div>
+{% endfor %}
+{% endblock %}
